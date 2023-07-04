@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellitas de Aztlán</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="grid-container">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img class="logo" src="src/img/logo.jpg" alt="Logo" width="80px" />
+                    </a>
+                </li>
+                <li class="nav-option">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="nav-option">
+                    <a href="about.html">¿Quiénes Somos?</a>
+                </li>
+                <li class="nav-option">
+                    <a href="adopta.html">Adopta</a>
+                </li>
+                <li class="nav-option">
+                    <a href="contacto.html">Contáctanos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h2>¿Quiénes somos?</h2>
+        <figure>
+            <img src="./src/img/Yellow Purple Advocacy Pet Adoption Presentation.jpg" alt="Portada" class="about" />
+        </figure>
+        <article style="padding: 1rem">
+            <p>Somos una organización protectora de animales especializada, desde 1996, en la ayuda a perros y gatos
+                maltratados y/o abandonados; una organización mexicana totalmente independiente que no recibe
+                subvenciones de organismos oficiales, empresas ni partidos políticos.
+                <br /><br />
+                Las cuotas de nuestros socios y las donaciones de nuestros simpatizantes permiten que nuestra labor sea
+                sostenible y preservan nuestra libertad de acción.
+            </p>
+        </article>
+        <section style="text-align: center">
+            <h2>¿Qué hacemos? 🤍</h2>
+            <img src="./src/img/Colocamos lomitos en adopción.png" alt="adopción" width="400" height="400" />
+            <img src="./src/img/Colocamos lomitos en adopción (1).png" alt="Rescatamos" width="400" height="400" />
+            <img src="./src/img/Protegemos lomitos indefensos.png" alt="Protegemos" width="400" height="400" />
+        </section>
+        <section>
+            <h2>¿Te interesa formar parte de nuestro equipo? 😀</h2>
+            <p>
+                Completa el siguiente formulario y nos pondremos en contacto contigo
+            </p>
+            <form id="equipo">
+                <fieldset>
+                    <h3>Información para contacto</h3>
+                    <label for="nombre">
+                        <span>Nombre</span>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" size="30"
+                            autocomplete="name" required minlength="6" maxlength="50" required pattern="[A-Za-z\s]+"
+                            title="Ingrese un nombre válido (solo letras y espacios)" />
+                    </label>
+                    <label for="mail">
+                        <span>Correo electrónico</span>
+                        <input type="email" id="email" name="email" placeholder="doggy_2023@correo.com" size="30"
+                            required minlength="6" maxlength="50" />
+                    </label>
+                    <br />
+
+                    <label for="telefono">
+                        <span>Teléfono</span>
+                        <input type="text" id="telefono" size="15"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                            placeholder="10 dígitos" title="Ingrese un número de teléfono válido (solo dígitos)"
+                            autocomplete="tel" required minlength="10" maxlength="10" />
+                    </label>
+                    <br><br>
+
+                    <label class="laReferencia">
+                        <span>¡Queremos conocerte! Por favor, escribe a continuación tu carta de presentación.</span>
+                        <textarea name="textarea-499" cols="80" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                            aria-invalid="false"></textarea>
+                    </label>
+                    <br />
+                    <label for="cv">
+                        <span>Adjunta tu CV</span>
+                        <input type="file" id="cv" name="cv" size="40" class="wpcf7-form-control wpcf7-file"
+                            accept=".pdf,.doc,.docx,.ppt,.pptx" aria-invalid="false" />
+                    </label>
+
+                    <br />
+                    <input class="botonEnvio" type="submit" />
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <span>Derechos reservados ® By Generation México CH29</span>
+    </footer>
+</body>
+</html>

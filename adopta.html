@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="grid-container">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img class="logo" src="src/img/logo.jpg" alt="Logo" width="80px" />
+                    </a>
+                </li>
+                <li class="nav-option">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="nav-option">
+                    <a href="about.html">¿Quiénes Somos?</a>
+                </li>
+                <li class="nav-option">
+                    <a href="adopta.html">Adopta</a>
+                </li>
+                <li class="nav-option">
+                    <a href="contacto.html">Contáctanos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section>
+            <h2>
+                Requisitos de adopción
+            </h2>
+            <div style="text-align: center">
+                <img src="https://elrefugio.org/contenido/hazteSocio/el-refugio-hazte-socio.jpg" alt="perritotriste" width="600px" height="300px" style="border-radius:1rem;">
+            </div>
+            <h3>
+                Listado de requisitos obligatorios
+            </h3>
+            <ol class="lista" style="padding: 2rem;">
+                
+                <li>Ser mayor de edad. Presentar documento de identificación oficial.</li>
+                <li>Comprobante de domicilio. Documento que demuestre que la persona es propietaria del domicilio donde vivirá la mascota o, en caso de alquiler, que el arrendatario permite residir con animales.</li>
+                <li>Aprobar la evaluación diagnóstica integral realizada por el centro comunitario</li>
+                <li>Debes firmar un acta que te compromete a:</li>
+                <ul class="acta">
+                    <li>Cuidar de tu mascota y mantenerla en unas condiciones óptimas de espacio, tiempo, alimentación, ejercicio...</li>
+                    <li>Dotarle de los cuidados veterinarios que necesite. </li>
+                    <li>La mascota se entregará desparasitada y con las correspondientes vacunas, los perros y los gatos llevarán, además, microchip. No destinarlo a la cría o reproducción. </li>
+                    <li>Los animales que tengan la edad suficiente se entregarán esterilizados, y si aún no han alcanzado la edad necesaria se firmará un compromiso de esterilización.</li>
+                    <li>Notificar cualquier cambio a la asociación (pérdida, muerte...).</li>
+                    <li>Compromiso de no abandonarlo. Si por algún motivo no puedes hacerte cargo de la mascota lo devolverás a la asociación.</li>
+                </ul>
+            </ol>
+        </section>
+        <h3>Sube los archivos requeridos para evaluar tu solicitud</h3>
+        <form id="adoptar">
+            <fieldset>
+                <label for="ine">
+                    <span>Foto de identificación:</span>
+                    <input type="file" id="ine">
+                </label>
+                <br>
+                <label for="ine">
+                    <span>Sube comprobante de domicilio</span>
+                    <input type="file" id="comprobante">
+                </label>
+                <br>
+                <label for="cartaCompromisoDrive">
+                    <span>Descarga el acta de compromiso</span>
+                    <button>Clic aquí</button>
+                </label>
+                <br>
+
+                <label for="cartaCompromiso">
+                    <span>Sube tu carta de compromiso</span>
+                    <input type="file" id="cartaCompromiso">
+                </label>
+                    <br>
+                    <input class="botonEnvio" type="submit">        
+            </fieldset>
+        </form>
+    </main>
+        
+    <footer class="footer">
+        <span>Derechos reservados ® By Generation México CH29</span>
+    </footer>
+</body>
+</html>
+    

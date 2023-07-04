@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="grid-container">
+
+  <header>
+    <nav class="navbar">
+        <ul>
+          <li><a href="index.html"><img class="logo" src="src/img/logo.jpg" alt="Logo" width="80px"></a></li>
+          <li class="nav-option"><a href="index.html" >Inicio</a></li>
+          <li class="nav-option"><a href="about.html">¿Quiénes Somos?</a></li>
+          <li class="nav-option"><a href="adopta.html">Adopta</a></li>
+          <li class="nav-option"><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section>
+      <h2>Dirección y horario📌</h2>
+      <h3>Horario ⌚</h3>
+      <p> De lunes a viernes de 9 a 18 horas</p>
+      <h3>Dirección</h3>
+      <p>Ubica el centro de adopción más cercano a tu domicilio en el siguiente mapa:</p>
+      <div class="mapa" style="text-align: center; ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.066476040541!2d-99.0528797887888!3d19.27947514547713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce030ebc1ba65f%3A0x3039abcdffaadc09!2sCl%C3%ADnica%20Veterinaria%20BIENESTAR%20Y%20ADOPCI%C3%93N%20ANIMAL%20TL%C3%81HUAC.!5e0!3m2!1ses!2smx!4v1687819888329!5m2!1ses!2smx" width="600" height="450" style="border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </section>
+
+    <h2> Correos y teléfonos </h2>
+
+    <p><strong>Correos</strong> </p>
+    <p> contacto@perrosapoyocomunitario.org </p>    
+    <p> adopciones@perrosapoyocomunitario.org </p>
+    <p> voluntariado@perrosapoyocomunitario.org </p>
+    <p> <strong>Números de teléfono </strong> </p>
+    <p> Teléfono principal: +1 555-123-4567</p>
+    <p> Departamento de adopciones: +1 555-234-5678</p>
+    <p> Departamento de voluntariado: +1 555-345-6789 </p>
+    <h2>Contáctanos</h2>
+    <form action="procesar_formulario.php" method="post" id="citas">
+      <fieldset>
+        <h3> Agenda tu cita!</h3>
+        
+        <label for="nombre">
+          <span>Nombre completo:</span>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required pattern="[A-Za-z\s]+"
+          title="Ingrese un nombre válido (solo letras y espacios)">
+        </label>
+
+      <label for="telefono">
+          <span>Teléfono</span>
+          <input type="text" id="telefono" size="15"
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+              placeholder="10 dígitos" title="Ingrese un número de teléfono válido (solo dígitos)"
+              autocomplete="tel" required minlength="10" maxlength="10" />
+      </label>
+      <br>
+
+      <label for="mail">
+        <span>Correo electrónico</span>
+        <input type="email" id="email" name="email" placeholder="doggy_2023@correo.com" size="30" required minlength="6" maxlength="50" />
+      </label>
+      <br>
+      <label for="fecha">
+        <span>Fecha y hora deseada para la cita:</span>
+        <input type="datetime-local" id="fecha" name="fecha">
+      </label>
+      <br><br>
+      <label for="motivo">
+        <span>Motivo de la cita:</span>
+        <br>
+        <textarea id="motivo" name="motivo" rows="4" cols="50" required></textarea>
+      </label>
+      <br>
+      <input class="botonEnvio" type="submit">
+      </fieldset>
+    </form>
+
+
+    <form action="" id="reporte">
+      <fieldset>
+        <h3>Reporte de caso para revisión &#128054</h3>
+        <span>En caso de que cuentes con perritos y desees darlos en adopción, nosotros podríamos ayudarte a difundir la información.</span>
+        <br><br>
+        <span>Apóyanos a rellenar el siguiente formulario:</span>
+        <br>
+          <label for="nombre">
+            <span>¿Cuál es tu nombre?</span>
+            <input type="text" id="nombre" placeholder="Nombre y Apellido" required minlength="3" maxlength="50" />
+          </label>
+
+          <label for="mail">
+            <span>Correo electrónico</span>
+            <input type="email" id="email" name="email" placeholder="doggy_2023@correo.com" size="30" required minlength="6" maxlength="50" />
+          </label>
+          <br>
+          <label for="edad">
+            <span>¿Cuántos años tienes?</span>
+            <input type="number" id="edad" required min="18" placeholder="18"/>
+          </label>
+          <label for="telefono">
+            <span>Teléfono</span>
+            <input type="text" id="telefono" size="15"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                placeholder="10 dígitos" title="Ingrese un número de teléfono válido (solo dígitos)"
+                autocomplete="tel" required minlength="10" maxlength="10" />
+        </label>
+        <br><br>
+
+          <label for="caso">
+            <span>Detalla la situación y cómo podemos ayudarte</span>
+          </label>
+          <br>
+          <textarea name="caso" rows="10" cols="60" placeholder="Detalle de caso" id="caso"></textarea>
+        <br />
+        <input class="botonEnvio" type="submit" />
+      </fieldset>
+    </form>
+
+  </main>
+  <footer class="footer">
+    <span>Derechos reservados ® By Generation México CH29</span>
+</footer>
+</body>
+
+</html>

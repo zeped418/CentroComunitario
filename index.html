@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Huellitas de Aztlán</title>
+      <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body class="grid-container">
+
+    <header>
+      <nav class="navbar">
+          <ul>
+            <li><a href="index.html"><img class="logo" src="src/img/logo.jpg" alt="Logo" width="80px"></a></li>
+            <li class="nav-option"><a href="index.html" >Inicio</a></li>
+            <li class="nav-option"><a href="about.html">¿Quiénes Somos?</a></li>
+            <li class="nav-option"><a href="adopta.html">Adopta</a></li>
+            <li class="nav-option"><a href="contacto.html">Contáctanos</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section> 
+        <img class="carrusel" src="./src/img/carrusel.jpg" alt="Adopción">
+      </section>
+      <h2>¡Lleva un nuevo amigo a casa! 🏠</h2>
+      <p>En Huellitas de Aztlán tenemos a tu amigo ideal, contáctanos para conocer a las mascotas que esperan por ser adoptadas</p>
+      <div style="text-align: center;">
+      <ul style="list-style: none; display: inline-block;" >
+        <li><a href="adopta.html#adoptar"><img src="./src/img/1.jpg" alt="" class="index-dog"></a></li>
+        <li><a href="adopta.html#adoptar"><img src="./src/img/2.jpg" alt="" class="index-dog"></a></li>
+        <li><a href="adopta.html#adoptar"><img src="./src/img/3.jpg" alt="" class="index-dog"></a></li>
+      </ul>
+    </div>
+      
+      <section>
+        <h2>Encuentra tu centro de adopción más cercano 📌</h2>
+        <p>Ubica el centro de adopción más cercano a tu domicilio en el siguiente mapa:</p>
+        <div class="mapa" style="text-align: center; ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.066476040541!2d-99.0528797887888!3d19.27947514547713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce030ebc1ba65f%3A0x3039abcdffaadc09!2sCl%C3%ADnica%20Veterinaria%20BIENESTAR%20Y%20ADOPCI%C3%93N%20ANIMAL%20TL%C3%81HUAC.!5e0!3m2!1ses!2smx!4v1687819888329!5m2!1ses!2smx" width="600" height="450" style="border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+      
+      <section>
+        <h2>¿Cómo puedes donar para apoyarnos? 🐕</h2>     
+        <p>Agradecemos mucho la ayuda que nos brindes para continuar en nuestras labores. Para facilitar las donaciones hemos habilitado varios canales por el que nos puedes hacer llegar tu donación. Elige el que mejor te venga.</p>   
+        
+        <form id="tarjeta">
+            <fieldset>
+              <h3>Transferencia electrónica</h3>
+                <span> Puedes realizar <a href="https://www.bbva.mx/educacion-financiera/banca-digital/como-hacer-una-transferencia-bancaria.html">Trasferencia SPEI</a> o a través de la plataforma <a href="./paypal.html">PayPal</a>.
+                </span>   
+                <br>
+              <h3>Donación con Tarjeta</h3>
+              <span>También tenemos la posibilidad de recibir donaciones a través de un cargo a tu tarjeta:</span>
+              <ul style="text-align: center;">
+                <li>
+                  <figure style="padding-top: 15px;">
+                    <img src="./src/img/tarjeta.jpg" alt="">
+                  </figure>
+                </li>
+              </ul>
+                <label for="nombre">
+                  <span>Nombre del titular</span>
+                  <input type="text" id="nombre" autocomplete="name"size="30" placeholder="Nombre y Apellido" required minlength="6" maxlength="50" >
+                </label>
+                
+                <label for="numero">
+                  <span>Número de tarjeta</span>
+                  <input type="text" id="numero" size="18" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="16 dígitos" required minlength="16" maxlength="16">
+                </label>
+                <br>
+                <label for="mesExpiracion">
+                  <span>Mes de expiración</span>
+                  <input type="number" id="mesExpiracion" min="1" max="12" step="1" placeholder="1">
+                </label>
+                <label for="anioExpiracion">
+                  <span>Año de expiración</span>
+                  <input type="number" min="2023" max="2030" step="1" placeholder="202X" id="anioExpiracion">
+                </label>
+                
+                <label for="codigo">
+                  <span>Código de seguridad</span>
+                  <input type="text" id="codigo" name="codigo" size="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="3 dígitos" required minlength="3" maxlength="3"/>
+                </label>
+                <!-- <span class="infocvv">i</span> -->
+                <figure style="text-align: right; margin-right:10rem;">
+                  <img src="./src/img/cvv.png" alt="cvv" width="120px">
+                </figure>
+                <br>
+                <input class="botonEnvio" type="submit">
+            </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <h2>Indice de formularios 🗒️</h2>
+        <div>
+          <table style="margin: auto;">
+            <thead style="height: 40px; font-size: 16px;">
+              <tr>
+                <th>Formulario </th>
+                <th>Enlace</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Formulario 1 </td>
+                <td><a href="paypal.html">Paypal </a></td>
+              </tr>
+              <tr>
+                <td>Formulario 2</td>
+                <td><a href="about.html#equipo">Formar parte del equipo</a></td>
+              </tr>
+              <tr>
+                <td>Formulario 3</td>
+                <td><a href="adopta.html#adoptar">Datos para adoptar</a></td>
+              </tr>
+              <tr>
+                <td>Formulario 4</td>
+                <td><a href="contacto.html#citas">Contáctanos</a></td>
+              </tr>
+              <tr>
+                <td>Formulario 5</td>
+                <td><a href="contacto.html#reporte">Reporte de caso</a></td>
+              </tr>
+              <tr>
+                <td>Formulario 6</td>
+                <td><a href="#tarjeta">Tarjeta</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <span>Derechos reservados ® By Generation México CH29</span>
+    </footer> 
+</html>
